@@ -126,6 +126,23 @@ class Colors(BaseModelWithoutExtraKeys):
         examples=color_common_examples,
     )
 
+    entry_titles: Color | None = pydantic.Field(
+        default=None,
+        description=(
+            "The color for entry titles (bold text in entry templates, e.g. `**COMPANY**`). " + color_common_description
+            + " If not set, the surrounding text color is used."
+        ),
+        examples=color_common_examples,
+    )
+    dates: Color | None = pydantic.Field(
+        default=None,
+        description=(
+            "The color for dates and locations in entries. " + color_common_description
+            + " If not set, the surrounding text color is used."
+        ),
+        examples=color_common_examples,
+    )
+
 
 class FontFamily(BaseModelWithoutExtraKeys):
     body: FontFamilyType = pydantic.Field(
@@ -159,6 +176,15 @@ class FontFamily(BaseModelWithoutExtraKeys):
         ),
     )
 
+    entry_titles: FontFamilyType | None = pydantic.Field(
+        default=None,
+        description="The font family for entry titles (bold text in entry templates, e.g. `**COMPANY**`). If not set, the body font is used.",
+    )
+    dates: FontFamilyType | None = pydantic.Field(
+        default=None,
+        description="The font family for dates and locations in entries. If not set, the body font is used.",
+    )
+
 
 class FontSize(BaseModelWithoutExtraKeys):
     body: TypstDimension = pydantic.Field(
@@ -180,6 +206,15 @@ class FontSize(BaseModelWithoutExtraKeys):
     section_titles: TypstDimension = pydantic.Field(
         default="1.4em",
         description="The font size for section titles. The default value is `1.4em`.",
+    )
+
+    entry_titles: TypstDimension | None = pydantic.Field(
+        default=None,
+        description="The font size for entry titles (bold text in entry templates, e.g. `**COMPANY**`). If not set, the body font size is used.",
+    )
+    dates: TypstDimension | None = pydantic.Field(
+        default=None,
+        description="The font size for dates and locations in entries. If not set, the body font size is used.",
     )
 
 
@@ -227,6 +262,15 @@ class Bold(BaseModelWithoutExtraKeys):
     section_titles: bool = pydantic.Field(
         default=True,
         description="Whether to make section titles bold. The default value is `true`.",
+    )
+
+    entry_titles: bool | None = pydantic.Field(
+        default=None,
+        description="Whether to make entry titles (bold text in entry templates, e.g. `**COMPANY**`) bold. If not set, the template's own bolding is kept.",
+    )
+    dates: bool | None = pydantic.Field(
+        default=None,
+        description="Whether to make dates and locations in entries bold. If not set, the template's own bolding is kept.",
     )
 
 
@@ -481,6 +525,14 @@ class Sections(BaseModelWithoutExtraKeys):
     #     ),
     #     examples=[["Experience"], ["Education"]],
     # )
+    hide_titles_for: list[str] = pydantic.Field(
+        default=[],
+        description=(
+            "Section titles (lowercase, spaces as underscores) whose heading should not"
+            " be rendered. The default value is `[]`."
+        ),
+        examples=[["summary"], ["summary", "objective"]],
+    )
     show_time_spans_in: list[str] = pydantic.Field(
         default=["experience"],
         description=(

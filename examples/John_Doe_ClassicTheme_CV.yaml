@@ -200,6 +200,8 @@ design:
   #   links: rgb(0, 79, 144)
   #   footer: rgb(128, 128, 128)
   #   top_note: rgb(128, 128, 128)
+  #   entry_titles:
+  #   dates:
   # typography:
   #   line_spacing: 0.6em
   #   alignment: justified
@@ -210,12 +212,16 @@ design:
   #     headline: Source Sans 3
   #     connections: Source Sans 3
   #     section_titles: Source Sans 3
+  #     entry_titles:
+  #     dates:
   #   font_size:
   #     body: 10pt
   #     name: 30pt
   #     headline: 10pt
   #     connections: 10pt
   #     section_titles: 1.4em
+  #     entry_titles:
+  #     dates:
   #   small_caps:
   #     name: false
   #     headline: false
@@ -226,6 +232,8 @@ design:
   #     headline: false
   #     connections: false
   #     section_titles: true
+  #     entry_titles:
+  #     dates:
   # links:
   #   underline: false
   #   show_external_link_icon: false
@@ -254,6 +262,7 @@ design:
   #   allow_page_break: true
   #   space_between_regular_entries: 1.2em
   #   space_between_text_based_entries: 0.3em
+  #   hide_titles_for: []
   #   show_time_spans_in:
   #     - experience
   # entries:

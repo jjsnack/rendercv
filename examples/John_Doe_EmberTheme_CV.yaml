@@ -200,6 +200,8 @@ design:
   #   links: rgb(155, 35, 25)
   #   footer: rgb(140, 125, 118)
   #   top_note: rgb(140, 125, 118)
+  #   entry_titles:
+  #   dates:
   # typography:
   #   line_spacing: 0.6em
   #   alignment: justified-with-no-hyphenation
@@ -210,12 +212,16 @@ design:
   #     headline: Gentium Book Plus
   #     connections: Ubuntu
   #     section_titles: Ubuntu
+  #     entry_titles:
+  #     dates:
   #   font_size:
   #     body: 10pt
   #     name: 30pt
   #     headline: 10.5pt
   #     connections: 9pt
   #     section_titles: 1.25em
+  #     entry_titles:
+  #     dates:
   #   small_caps:
   #     name: false
   #     headline: true
@@ -226,6 +232,8 @@ design:
   #     headline: false
   #     connections: false
   #     section_titles: false
+  #     entry_titles:
+  #     dates:
   # links:
   #   underline: true
   #   show_external_link_icon: false
@@ -254,6 +262,7 @@ design:
   #   allow_page_break: true
   #   space_between_regular_entries: 1.1em
   #   space_between_text_based_entries: 0.3em
+  #   hide_titles_for: []
   #   show_time_spans_in: []
   # entries:
   #   date_and_location_width: 4.15cm

@@ -258,6 +258,27 @@
     let entries-highlights-space-left = config.at("entries-highlights-space-left")
     let start-align = config.at("start-align")
 
+    // Optional per-element styling; `none` keeps the surrounding style.
+    let style-text(prefix) = {
+      let font = config.at("typography-font-family-" + prefix)
+      let size = config.at("typography-font-size-" + prefix)
+      let fill = config.at("colors-" + prefix)
+      body => {
+        set text(font: font) if font != none
+        set text(size: size) if size != none
+        set text(fill: fill) if fill != none
+        body
+      }
+    }
+    let style-entry-title = style-text("entry-titles")
+    let style-date = style-text("dates")
+    let bold-entry-titles = config.at("typography-bold-entry-titles")
+    let bold-dates = config.at("typography-bold-dates")
+    show strong: it => style-entry-title(if bold-entry-titles == false { it.body } else { it })
+    let date-and-location-column = if date-and-location-column == none { none } else {
+      style-date(if bold-dates == true { strong(date-and-location-column) } else { date-and-location-column })
+    }
+
     set list(
       marker: (entries-highlights-bullet, entries-highlights-nested-bullet),
       indent: entries-highlights-space-left,
@@ -413,6 +434,14 @@
   typography-bold-headline: false,
   typography-bold-connections: false,
   typography-bold-section-titles: false,
+  colors-entry-titles: none,
+  colors-dates: none,
+  typography-font-family-entry-titles: none,
+  typography-font-family-dates: none,
+  typography-font-size-entry-titles: none,
+  typography-font-size-dates: none,
+  typography-bold-entry-titles: none,
+  typography-bold-dates: none,
   links-underline: false,
   links-show-external-link-icon: false,
   header-alignment: left,
@@ -502,6 +531,14 @@
     typography-bold-headline: typography-bold-headline,
     typography-bold-connections: typography-bold-connections,
     typography-bold-section-titles: typography-bold-section-titles,
+    colors-entry-titles: colors-entry-titles,
+    colors-dates: colors-dates,
+    typography-font-family-entry-titles: typography-font-family-entry-titles,
+    typography-font-family-dates: typography-font-family-dates,
+    typography-font-size-entry-titles: typography-font-size-entry-titles,
+    typography-font-size-dates: typography-font-size-dates,
+    typography-bold-entry-titles: typography-bold-entry-titles,
+    typography-bold-dates: typography-bold-dates,
     // Links
     links-underline: links-underline,
     links-show-external-link-icon: links-show-external-link-icon,
@@ -681,6 +718,10 @@
     // Vertical space after the section title
     #v(section-titles-space-below - 0.5em)
   ]
+  // Hidden section title (empty heading): keep the spacing only.
+  #show heading.where(level: 2): it => if it.body == [] {
+    v(section-titles-space-above, weak: true)
+  } else { it }
 
   // Top note:
   #if page-show-top-note and top-note != none and top-note != "" {

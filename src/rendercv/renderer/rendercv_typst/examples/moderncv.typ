@@ -6,7 +6,7 @@
   name: "John Doe",
   title: "John Doe - CV",
   footer: context { [#emph[John Doe -- #str(here().page())\/#str(counter(page).final().first())]] },
-  top-note: [ #emph[Last updated in Mar 2026] ],
+  top-note: [ #emph[Last updated in Oct 2026] ],
   locale-catalog-language: "en",
   text-direction: ltr,
   page-size: "us-letter",
@@ -24,6 +24,8 @@
   colors-links: rgb(0, 79, 144),
   colors-footer: rgb(128, 128, 128),
   colors-top-note: rgb(128, 128, 128),
+  colors-entry-titles: none,
+  colors-dates: none,
   typography-line-spacing: 0.6em,
   typography-alignment: "justified",
   typography-date-and-location-column-alignment: right,
@@ -32,11 +34,15 @@
   typography-font-family-headline: "Fontin",
   typography-font-family-connections: "Fontin",
   typography-font-family-section-titles: "Fontin",
+  typography-font-family-entry-titles: none,
+  typography-font-family-dates: none,
   typography-font-size-body: 10pt,
   typography-font-size-name: 25pt,
   typography-font-size-headline: 10pt,
   typography-font-size-connections: 10pt,
   typography-font-size-section-titles: 1.4em,
+  typography-font-size-entry-titles: none,
+  typography-font-size-dates: none,
   typography-small-caps-name: false,
   typography-small-caps-headline: false,
   typography-small-caps-connections: false,
@@ -45,6 +51,8 @@
   typography-bold-headline: false,
   typography-bold-connections: false,
   typography-bold-section-titles: false,
+  typography-bold-entry-titles: none,
+  typography-bold-dates: none,
   links-underline: true,
   links-show-external-link-icon: false,
   header-alignment: left,
@@ -80,8 +88,8 @@
   entries-highlights-space-between-bullet-and-text: 0.3em,
   date: datetime(
     year: 2026,
-    month: 3,
-    day: 20,
+    month: 10,
+    day: 27,
   ),
 )
 
@@ -199,11 +207,11 @@ Markdown syntax is supported everywhere. This is #strong[bold], #emph[italic], a
 
     - Published research at top-tier venues with significant academic impact
 
-      - ICML 2022 main conference paper, cited 340+ times within two years
+    - ICML 2022 main conference paper, cited 340+ times within two years
 
-      - NeurIPS 2022 workshop paper on emergent communication protocols
+    - NeurIPS 2022 workshop paper on emergent communication protocols
 
-      - Invited journal extension in JMLR (2023)
+    - Invited journal extension in JMLR (2023)
 
   ],
 )

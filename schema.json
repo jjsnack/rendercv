@@ -3878,6 +3878,32 @@
           "description": "Whether to make section titles bold. The default value is `true`.",
           "title": "Section Titles",
           "type": "boolean"
+        },
+        "entry_titles": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Whether to make entry titles (bold text in entry templates, e.g. `**COMPANY**`) bold. If not set, the template's own bolding is kept.",
+          "title": "Entry Titles"
+        },
+        "dates": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Whether to make dates and locations in entries bold. If not set, the template's own bolding is kept.",
+          "title": "Dates"
         }
       },
       "title": "Bold",
@@ -3909,6 +3935,32 @@
           "description": "Whether to make section titles bold. The default value is `true`.",
           "title": "Section Titles",
           "type": "boolean"
+        },
+        "entry_titles": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Whether to make entry titles (bold text in entry templates, e.g. `**COMPANY**`) bold. If not set, the template's own bolding is kept.",
+          "title": "Entry Titles"
+        },
+        "dates": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Whether to make dates and locations in entries bold. If not set, the template's own bolding is kept.",
+          "title": "Dates"
         }
       },
       "title": "Bold",
@@ -3940,6 +3992,32 @@
           "description": "Whether to make section titles bold. The default value is `true`.",
           "title": "Section Titles",
           "type": "boolean"
+        },
+        "entry_titles": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Whether to make entry titles (bold text in entry templates, e.g. `**COMPANY**`) bold. If not set, the template's own bolding is kept.",
+          "title": "Entry Titles"
+        },
+        "dates": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Whether to make dates and locations in entries bold. If not set, the template's own bolding is kept.",
+          "title": "Dates"
         }
       },
       "title": "Bold",
@@ -3971,6 +4049,32 @@
           "description": "Whether to make section titles bold. The default value is `true`.",
           "title": "Section Titles",
           "type": "boolean"
+        },
+        "entry_titles": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Whether to make entry titles (bold text in entry templates, e.g. `**COMPANY**`) bold. If not set, the template's own bolding is kept.",
+          "title": "Entry Titles"
+        },
+        "dates": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Whether to make dates and locations in entries bold. If not set, the template's own bolding is kept.",
+          "title": "Dates"
         }
       },
       "title": "Bold",
@@ -4002,6 +4106,32 @@
           "description": "Whether to make section titles bold. The default value is `true`.",
           "title": "Section Titles",
           "type": "boolean"
+        },
+        "entry_titles": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Whether to make entry titles (bold text in entry templates, e.g. `**COMPANY**`) bold. If not set, the template's own bolding is kept.",
+          "title": "Entry Titles"
+        },
+        "dates": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Whether to make dates and locations in entries bold. If not set, the template's own bolding is kept.",
+          "title": "Dates"
         }
       },
       "title": "Bold",
@@ -4033,6 +4163,32 @@
           "description": "Whether to make section titles bold. The default value is `true`.",
           "title": "Section Titles",
           "type": "boolean"
+        },
+        "entry_titles": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Whether to make entry titles (bold text in entry templates, e.g. `**COMPANY**`) bold. If not set, the template's own bolding is kept.",
+          "title": "Entry Titles"
+        },
+        "dates": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Whether to make dates and locations in entries bold. If not set, the template's own bolding is kept.",
+          "title": "Dates"
         }
       },
       "title": "Bold",
@@ -4064,6 +4220,32 @@
           "description": "Whether to make section titles bold. The default value is `true`.",
           "title": "Section Titles",
           "type": "boolean"
+        },
+        "entry_titles": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Whether to make entry titles (bold text in entry templates, e.g. `**COMPANY**`) bold. If not set, the template's own bolding is kept.",
+          "title": "Entry Titles"
+        },
+        "dates": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Whether to make dates and locations in entries bold. If not set, the template's own bolding is kept.",
+          "title": "Dates"
         }
       },
       "title": "Bold",
@@ -4175,6 +4357,46 @@
           "format": "color",
           "title": "Top Note",
           "type": "string"
+        },
+        "entry_titles": {
+          "anyOf": [
+            {
+              "format": "color",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The color for entry titles (bold text in entry templates, e.g. `**COMPANY**`). The color can be specified either with their name (https://www.w3.org/TR/SVG11/types.html#ColorKeywords), hexadecimal value, RGB value, or HSL value. If not set, the surrounding text color is used.",
+          "examples": [
+            "Black",
+            "7fffd4",
+            "rgb(0,79,144)",
+            "hsl(270, 60%, 70%)"
+          ],
+          "title": "Entry Titles"
+        },
+        "dates": {
+          "anyOf": [
+            {
+              "format": "color",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The color for dates and locations in entries. The color can be specified either with their name (https://www.w3.org/TR/SVG11/types.html#ColorKeywords), hexadecimal value, RGB value, or HSL value. If not set, the surrounding text color is used.",
+          "examples": [
+            "Black",
+            "7fffd4",
+            "rgb(0,79,144)",
+            "hsl(270, 60%, 70%)"
+          ],
+          "title": "Dates"
         }
       },
       "title": "Colors",
@@ -4238,6 +4460,46 @@
           "format": "color",
           "title": "Top Note",
           "type": "string"
+        },
+        "entry_titles": {
+          "anyOf": [
+            {
+              "format": "color",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The color for entry titles (bold text in entry templates, e.g. `**COMPANY**`). The color can be specified either with their name (https://www.w3.org/TR/SVG11/types.html#ColorKeywords), hexadecimal value, RGB value, or HSL value. If not set, the surrounding text color is used.",
+          "examples": [
+            "Black",
+            "7fffd4",
+            "rgb(0,79,144)",
+            "hsl(270, 60%, 70%)"
+          ],
+          "title": "Entry Titles"
+        },
+        "dates": {
+          "anyOf": [
+            {
+              "format": "color",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The color for dates and locations in entries. The color can be specified either with their name (https://www.w3.org/TR/SVG11/types.html#ColorKeywords), hexadecimal value, RGB value, or HSL value. If not set, the surrounding text color is used.",
+          "examples": [
+            "Black",
+            "7fffd4",
+            "rgb(0,79,144)",
+            "hsl(270, 60%, 70%)"
+          ],
+          "title": "Dates"
         }
       },
       "title": "Colors",
@@ -4319,6 +4581,46 @@
           "format": "color",
           "title": "Top Note",
           "type": "string"
+        },
+        "entry_titles": {
+          "anyOf": [
+            {
+              "format": "color",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The color for entry titles (bold text in entry templates, e.g. `**COMPANY**`). The color can be specified either with their name (https://www.w3.org/TR/SVG11/types.html#ColorKeywords), hexadecimal value, RGB value, or HSL value. If not set, the surrounding text color is used.",
+          "examples": [
+            "Black",
+            "7fffd4",
+            "rgb(0,79,144)",
+            "hsl(270, 60%, 70%)"
+          ],
+          "title": "Entry Titles"
+        },
+        "dates": {
+          "anyOf": [
+            {
+              "format": "color",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The color for dates and locations in entries. The color can be specified either with their name (https://www.w3.org/TR/SVG11/types.html#ColorKeywords), hexadecimal value, RGB value, or HSL value. If not set, the surrounding text color is used.",
+          "examples": [
+            "Black",
+            "7fffd4",
+            "rgb(0,79,144)",
+            "hsl(270, 60%, 70%)"
+          ],
+          "title": "Dates"
         }
       },
       "title": "Colors",
@@ -4400,6 +4702,46 @@
           "format": "color",
           "title": "Top Note",
           "type": "string"
+        },
+        "entry_titles": {
+          "anyOf": [
+            {
+              "format": "color",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The color for entry titles (bold text in entry templates, e.g. `**COMPANY**`). The color can be specified either with their name (https://www.w3.org/TR/SVG11/types.html#ColorKeywords), hexadecimal value, RGB value, or HSL value. If not set, the surrounding text color is used.",
+          "examples": [
+            "Black",
+            "7fffd4",
+            "rgb(0,79,144)",
+            "hsl(270, 60%, 70%)"
+          ],
+          "title": "Entry Titles"
+        },
+        "dates": {
+          "anyOf": [
+            {
+              "format": "color",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The color for dates and locations in entries. The color can be specified either with their name (https://www.w3.org/TR/SVG11/types.html#ColorKeywords), hexadecimal value, RGB value, or HSL value. If not set, the surrounding text color is used.",
+          "examples": [
+            "Black",
+            "7fffd4",
+            "rgb(0,79,144)",
+            "hsl(270, 60%, 70%)"
+          ],
+          "title": "Dates"
         }
       },
       "title": "Colors",
@@ -4469,6 +4811,46 @@
           "format": "color",
           "title": "Top Note",
           "type": "string"
+        },
+        "entry_titles": {
+          "anyOf": [
+            {
+              "format": "color",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The color for entry titles (bold text in entry templates, e.g. `**COMPANY**`). The color can be specified either with their name (https://www.w3.org/TR/SVG11/types.html#ColorKeywords), hexadecimal value, RGB value, or HSL value. If not set, the surrounding text color is used.",
+          "examples": [
+            "Black",
+            "7fffd4",
+            "rgb(0,79,144)",
+            "hsl(270, 60%, 70%)"
+          ],
+          "title": "Entry Titles"
+        },
+        "dates": {
+          "anyOf": [
+            {
+              "format": "color",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The color for dates and locations in entries. The color can be specified either with their name (https://www.w3.org/TR/SVG11/types.html#ColorKeywords), hexadecimal value, RGB value, or HSL value. If not set, the surrounding text color is used.",
+          "examples": [
+            "Black",
+            "7fffd4",
+            "rgb(0,79,144)",
+            "hsl(270, 60%, 70%)"
+          ],
+          "title": "Dates"
         }
       },
       "title": "Colors",
@@ -4538,6 +4920,46 @@
           "format": "color",
           "title": "Top Note",
           "type": "string"
+        },
+        "entry_titles": {
+          "anyOf": [
+            {
+              "format": "color",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The color for entry titles (bold text in entry templates, e.g. `**COMPANY**`). The color can be specified either with their name (https://www.w3.org/TR/SVG11/types.html#ColorKeywords), hexadecimal value, RGB value, or HSL value. If not set, the surrounding text color is used.",
+          "examples": [
+            "Black",
+            "7fffd4",
+            "rgb(0,79,144)",
+            "hsl(270, 60%, 70%)"
+          ],
+          "title": "Entry Titles"
+        },
+        "dates": {
+          "anyOf": [
+            {
+              "format": "color",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The color for dates and locations in entries. The color can be specified either with their name (https://www.w3.org/TR/SVG11/types.html#ColorKeywords), hexadecimal value, RGB value, or HSL value. If not set, the surrounding text color is used.",
+          "examples": [
+            "Black",
+            "7fffd4",
+            "rgb(0,79,144)",
+            "hsl(270, 60%, 70%)"
+          ],
+          "title": "Dates"
         }
       },
       "title": "Colors",
@@ -4619,6 +5041,46 @@
           "format": "color",
           "title": "Top Note",
           "type": "string"
+        },
+        "entry_titles": {
+          "anyOf": [
+            {
+              "format": "color",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The color for entry titles (bold text in entry templates, e.g. `**COMPANY**`). The color can be specified either with their name (https://www.w3.org/TR/SVG11/types.html#ColorKeywords), hexadecimal value, RGB value, or HSL value. If not set, the surrounding text color is used.",
+          "examples": [
+            "Black",
+            "7fffd4",
+            "rgb(0,79,144)",
+            "hsl(270, 60%, 70%)"
+          ],
+          "title": "Entry Titles"
+        },
+        "dates": {
+          "anyOf": [
+            {
+              "format": "color",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The color for dates and locations in entries. The color can be specified either with their name (https://www.w3.org/TR/SVG11/types.html#ColorKeywords), hexadecimal value, RGB value, or HSL value. If not set, the surrounding text color is used.",
+          "examples": [
+            "Black",
+            "7fffd4",
+            "rgb(0,79,144)",
+            "hsl(270, 60%, 70%)"
+          ],
+          "title": "Dates"
         }
       },
       "title": "Colors",
@@ -5820,6 +6282,30 @@
           "$ref": "#/$defs/rendercv__schema__models__design__font_family__FontFamily",
           "default": "Source Sans 3",
           "description": "The font family for section titles. The default value is `Source Sans 3`."
+        },
+        "entry_titles": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/rendercv__schema__models__design__font_family__FontFamily"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The font family for entry titles (bold text in entry templates, e.g. `**COMPANY**`). If not set, the body font is used."
+        },
+        "dates": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/rendercv__schema__models__design__font_family__FontFamily"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The font family for dates and locations in entries. If not set, the body font is used."
         }
       },
       "title": "FontFamily",
@@ -5852,6 +6338,30 @@
           "$ref": "#/$defs/TypstDimension",
           "default": "1.4em",
           "description": "The font size for section titles. The default value is `1.4em`."
+        },
+        "entry_titles": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/TypstDimension"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The font size for entry titles (bold text in entry templates, e.g. `**COMPANY**`). If not set, the body font size is used."
+        },
+        "dates": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/TypstDimension"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The font size for dates and locations in entries. If not set, the body font size is used."
         }
       },
       "title": "FontSize",
@@ -5884,6 +6394,30 @@
           "$ref": "#/$defs/TypstDimension",
           "default": "1.25em",
           "description": "The font size for section titles. The default value is `1.25em`."
+        },
+        "entry_titles": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/TypstDimension"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The font size for entry titles (bold text in entry templates, e.g. `**COMPANY**`). If not set, the body font size is used."
+        },
+        "dates": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/TypstDimension"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The font size for dates and locations in entries. If not set, the body font size is used."
         }
       },
       "title": "FontSize",
@@ -5916,6 +6450,30 @@
           "$ref": "#/$defs/TypstDimension",
           "default": "1.2em",
           "description": "The font size for section titles. The default value is `1.2em`."
+        },
+        "entry_titles": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/TypstDimension"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The font size for entry titles (bold text in entry templates, e.g. `**COMPANY**`). If not set, the body font size is used."
+        },
+        "dates": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/TypstDimension"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The font size for dates and locations in entries. If not set, the body font size is used."
         }
       },
       "title": "FontSize",
@@ -5948,6 +6506,30 @@
           "$ref": "#/$defs/TypstDimension",
           "default": "1.3em",
           "description": "The font size for section titles. The default value is `1.3em`."
+        },
+        "entry_titles": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/TypstDimension"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The font size for entry titles (bold text in entry templates, e.g. `**COMPANY**`). If not set, the body font size is used."
+        },
+        "dates": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/TypstDimension"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The font size for dates and locations in entries. If not set, the body font size is used."
         }
       },
       "title": "FontSize",
@@ -5980,6 +6562,30 @@
           "$ref": "#/$defs/TypstDimension",
           "default": "1.4em",
           "description": "The font size for section titles. The default value is `1.4em`."
+        },
+        "entry_titles": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/TypstDimension"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The font size for entry titles (bold text in entry templates, e.g. `**COMPANY**`). If not set, the body font size is used."
+        },
+        "dates": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/TypstDimension"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The font size for dates and locations in entries. If not set, the body font size is used."
         }
       },
       "title": "FontSize",
@@ -6012,6 +6618,30 @@
           "$ref": "#/$defs/TypstDimension",
           "default": "1.4em",
           "description": "The font size for section titles. The default value is `1.4em`."
+        },
+        "entry_titles": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/TypstDimension"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The font size for entry titles (bold text in entry templates, e.g. `**COMPANY**`). If not set, the body font size is used."
+        },
+        "dates": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/TypstDimension"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The font size for dates and locations in entries. If not set, the body font size is used."
         }
       },
       "title": "FontSize",
@@ -6044,6 +6674,30 @@
           "$ref": "#/$defs/TypstDimension",
           "default": "1.2em",
           "description": "The font size for section titles. The default value is `1.2em`."
+        },
+        "entry_titles": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/TypstDimension"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The font size for entry titles (bold text in entry templates, e.g. `**COMPANY**`). If not set, the body font size is used."
+        },
+        "dates": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/TypstDimension"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The font size for dates and locations in entries. If not set, the body font size is used."
         }
       },
       "title": "FontSize",
@@ -7730,6 +8384,24 @@
           "default": "0.3em",
           "description": "Vertical space between text-based entries. It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.3em`."
         },
+        "hide_titles_for": {
+          "default": [],
+          "description": "Section titles (lowercase, spaces as underscores) whose heading should not be rendered. The default value is `[]`.",
+          "examples": [
+            [
+              "summary"
+            ],
+            [
+              "summary",
+              "objective"
+            ]
+          ],
+          "items": {
+            "type": "string"
+          },
+          "title": "Hide Titles For",
+          "type": "array"
+        },
         "show_time_spans_in": {
           "default": [
             "experience"
@@ -7773,6 +8445,24 @@
           "default": "0.3em",
           "description": "Vertical space between text-based entries. It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.3em`."
         },
+        "hide_titles_for": {
+          "default": [],
+          "description": "Section titles (lowercase, spaces as underscores) whose heading should not be rendered. The default value is `[]`.",
+          "examples": [
+            [
+              "summary"
+            ],
+            [
+              "summary",
+              "objective"
+            ]
+          ],
+          "items": {
+            "type": "string"
+          },
+          "title": "Hide Titles For",
+          "type": "array"
+        },
         "show_time_spans_in": {
           "default": [],
           "description": "Section titles where time spans (e.g., '2 years 3 months') should be displayed. The default value is `[]`.",
@@ -7804,6 +8494,24 @@
           "$ref": "#/$defs/TypstDimension",
           "default": "0.3em",
           "description": "Vertical space between text-based entries. It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.3em`."
+        },
+        "hide_titles_for": {
+          "default": [],
+          "description": "Section titles (lowercase, spaces as underscores) whose heading should not be rendered. The default value is `[]`.",
+          "examples": [
+            [
+              "summary"
+            ],
+            [
+              "summary",
+              "objective"
+            ]
+          ],
+          "items": {
+            "type": "string"
+          },
+          "title": "Hide Titles For",
+          "type": "array"
         },
         "show_time_spans_in": {
           "default": [],
@@ -7837,6 +8545,24 @@
           "default": "0.15cm",
           "description": "Vertical space between text-based entries. It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.15cm`."
         },
+        "hide_titles_for": {
+          "default": [],
+          "description": "Section titles (lowercase, spaces as underscores) whose heading should not be rendered. The default value is `[]`.",
+          "examples": [
+            [
+              "summary"
+            ],
+            [
+              "summary",
+              "objective"
+            ]
+          ],
+          "items": {
+            "type": "string"
+          },
+          "title": "Hide Titles For",
+          "type": "array"
+        },
         "show_time_spans_in": {
           "default": [],
           "description": "Section titles where time spans (e.g., '2 years 3 months') should be displayed. The default value is `[]`.",
@@ -7868,6 +8594,24 @@
           "$ref": "#/$defs/TypstDimension",
           "default": "0.3em",
           "description": "Vertical space between text-based entries. It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.3em`."
+        },
+        "hide_titles_for": {
+          "default": [],
+          "description": "Section titles (lowercase, spaces as underscores) whose heading should not be rendered. The default value is `[]`.",
+          "examples": [
+            [
+              "summary"
+            ],
+            [
+              "summary",
+              "objective"
+            ]
+          ],
+          "items": {
+            "type": "string"
+          },
+          "title": "Hide Titles For",
+          "type": "array"
         },
         "show_time_spans_in": {
           "default": [],
@@ -7901,6 +8645,24 @@
           "default": "0.2em",
           "description": "Vertical space between text-based entries. It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.2em`."
         },
+        "hide_titles_for": {
+          "default": [],
+          "description": "Section titles (lowercase, spaces as underscores) whose heading should not be rendered. The default value is `[]`.",
+          "examples": [
+            [
+              "summary"
+            ],
+            [
+              "summary",
+              "objective"
+            ]
+          ],
+          "items": {
+            "type": "string"
+          },
+          "title": "Hide Titles For",
+          "type": "array"
+        },
         "show_time_spans_in": {
           "default": [],
           "description": "Section titles where time spans (e.g., '2 years 3 months') should be displayed. The default value is `[]`.",
@@ -7932,6 +8694,24 @@
           "$ref": "#/$defs/TypstDimension",
           "default": "0.3em",
           "description": "Vertical space between text-based entries. It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.3em`."
+        },
+        "hide_titles_for": {
+          "default": [],
+          "description": "Section titles (lowercase, spaces as underscores) whose heading should not be rendered. The default value is `[]`.",
+          "examples": [
+            [
+              "summary"
+            ],
+            [
+              "summary",
+              "objective"
+            ]
+          ],
+          "items": {
+            "type": "string"
+          },
+          "title": "Hide Titles For",
+          "type": "array"
         },
         "show_time_spans_in": {
           "default": [],
@@ -7965,6 +8745,24 @@
           "default": "0.3em",
           "description": "Vertical space between text-based entries. It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.3em`."
         },
+        "hide_titles_for": {
+          "default": [],
+          "description": "Section titles (lowercase, spaces as underscores) whose heading should not be rendered. The default value is `[]`.",
+          "examples": [
+            [
+              "summary"
+            ],
+            [
+              "summary",
+              "objective"
+            ]
+          ],
+          "items": {
+            "type": "string"
+          },
+          "title": "Hide Titles For",
+          "type": "array"
+        },
         "show_time_spans_in": {
           "default": [],
           "description": "Section titles where time spans (e.g., '2 years 3 months') should be displayed. The default value is `[]`.",
@@ -7996,6 +8794,24 @@
           "$ref": "#/$defs/TypstDimension",
           "default": "0.3em",
           "description": "Vertical space between text-based entries. It can be specified with units (cm, in, pt, mm, em). For example, `0.1cm`. The default value is `0.3em`."
+        },
+        "hide_titles_for": {
+          "default": [],
+          "description": "Section titles (lowercase, spaces as underscores) whose heading should not be rendered. The default value is `[]`.",
+          "examples": [
+            [
+              "summary"
+            ],
+            [
+              "summary",
+              "objective"
+            ]
+          ],
+          "items": {
+            "type": "string"
+          },
+          "title": "Hide Titles For",
+          "type": "array"
         },
         "show_time_spans_in": {
           "default": [],

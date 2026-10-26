@@ -200,6 +200,8 @@ design:
   #   links: rgb(42, 24, 82)
   #   footer: rgb(120, 100, 140)
   #   top_note: rgb(120, 100, 140)
+  #   entry_titles:
+  #   dates:
   # typography:
   #   line_spacing: 0.55em
   #   alignment: justified
@@ -210,12 +212,16 @@ design:
   #     headline: EB Garamond
   #     connections: EB Garamond
   #     section_titles: EB Garamond
+  #     entry_titles:
+  #     dates:
   #   font_size:
   #     body: 10pt
   #     name: 32pt
   #     headline: 11pt
   #     connections: 10pt
   #     section_titles: 1.4em
+  #     entry_titles:
+  #     dates:
   #   small_caps:
   #     name: false
   #     headline: false
@@ -226,6 +232,8 @@ design:
   #     headline: false
   #     connections: false
   #     section_titles: true
+  #     entry_titles:
+  #     dates:
   # links:
   #   underline: true
   #   show_external_link_icon: false
@@ -254,6 +262,7 @@ design:
   #   allow_page_break: true
   #   space_between_regular_entries: 1em
   #   space_between_text_based_entries: 0.2em
+  #   hide_titles_for: []
   #   show_time_spans_in: []
   # entries:
   #   date_and_location_width: 4.15cm

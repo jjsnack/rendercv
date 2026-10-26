@@ -6,7 +6,7 @@
   name: "John Doe",
   title: "John Doe - CV",
   footer: context { [#emph[John Doe -- #str(here().page())\/#str(counter(page).final().first())]] },
-  top-note: [ #emph[Last updated in Mar 2026] ],
+  top-note: [ #emph[Last updated in Oct 2026] ],
   locale-catalog-language: "en",
   text-direction: ltr,
   page-size: "us-letter",
@@ -24,6 +24,8 @@
   colors-links: rgb(0, 79, 144),
   colors-footer: rgb(128, 128, 128),
   colors-top-note: rgb(128, 128, 128),
+  colors-entry-titles: none,
+  colors-dates: none,
   typography-line-spacing: 0.6em,
   typography-alignment: "justified",
   typography-date-and-location-column-alignment: right,
@@ -32,11 +34,15 @@
   typography-font-family-headline: "Source Sans 3",
   typography-font-family-connections: "Source Sans 3",
   typography-font-family-section-titles: "Source Sans 3",
+  typography-font-family-entry-titles: none,
+  typography-font-family-dates: none,
   typography-font-size-body: 10pt,
   typography-font-size-name: 30pt,
   typography-font-size-headline: 10pt,
   typography-font-size-connections: 10pt,
   typography-font-size-section-titles: 1.4em,
+  typography-font-size-entry-titles: none,
+  typography-font-size-dates: none,
   typography-small-caps-name: false,
   typography-small-caps-headline: false,
   typography-small-caps-connections: false,
@@ -45,6 +51,8 @@
   typography-bold-headline: false,
   typography-bold-connections: false,
   typography-bold-section-titles: true,
+  typography-bold-entry-titles: none,
+  typography-bold-dates: none,
   links-underline: false,
   links-show-external-link-icon: false,
   header-alignment: center,
@@ -80,8 +88,8 @@
   entries-highlights-space-between-bullet-and-text: 0.5em,
   date: datetime(
     year: 2026,
-    month: 3,
-    day: 20,
+    month: 10,
+    day: 27,
   ),
 )
 
@@ -171,7 +179,9 @@ Markdown syntax is supported everywhere. This is #strong[bold], #emph[italic], a
 
     June 2023 – present
 
-    2 years 10 months
+    
+
+    3 years 5 months
 
   ],
 )
@@ -190,6 +200,8 @@ Markdown syntax is supported everywhere. This is #strong[bold], #emph[italic], a
 
     May 2022 – Aug 2022
 
+    
+
     4 months
 
   ],
@@ -203,17 +215,19 @@ Markdown syntax is supported everywhere. This is #strong[bold], #emph[italic], a
 
     - Published research at top-tier venues with significant academic impact
 
-      - ICML 2022 main conference paper, cited 340+ times within two years
+    - ICML 2022 main conference paper, cited 340+ times within two years
 
-      - NeurIPS 2022 workshop paper on emergent communication protocols
+    - NeurIPS 2022 workshop paper on emergent communication protocols
 
-      - Invited journal extension in JMLR (2023)
+    - Invited journal extension in JMLR (2023)
 
   ],
   [
     London, UK
 
     May 2021 – Aug 2021
+
+    
 
     4 months
 
@@ -234,6 +248,8 @@ Markdown syntax is supported everywhere. This is #strong[bold], #emph[italic], a
 
     May 2020 – Aug 2020
 
+    
+
     4 months
 
   ],
@@ -252,6 +268,8 @@ Markdown syntax is supported everywhere. This is #strong[bold], #emph[italic], a
     Redmond, WA
 
     May 2019 – Aug 2019
+
+    
 
     4 months
 
