@@ -247,6 +247,10 @@
 
 #let entry-title(body) = style-element("entry-titles", body)
 
+// Fixed-width columns for free-form rows, e.g. `#title-cell(6cm)[Name]#cell(3.6cm)[Role]`.
+#let cell(width, body) = box(width: width, body)
+#let title-cell(width, body) = box(width: width, entry-title(body))
+
 // A date styled like the date column of regular entries, with the same width and alignment.
 #let date-cell(body) = context {
   let config = rendercv-config.get()
