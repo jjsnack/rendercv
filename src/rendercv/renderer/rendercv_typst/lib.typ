@@ -232,6 +232,30 @@
   }
 }
 
+// Apply the optional `entry_titles` / `dates` styling to arbitrary content, for use
+// in free-form rows (e.g. `#entry-title[Name]`, `#date-cell[2018 -- 2020]`).
+#let style-element(prefix, body) = context {
+  let config = rendercv-config.get()
+  let font = config.at("typography-font-family-" + prefix)
+  let size = config.at("typography-font-size-" + prefix)
+  let fill = config.at("colors-" + prefix)
+  set text(font: font) if font != none
+  set text(size: size) if size != none
+  set text(fill: fill) if fill != none
+  if config.at("typography-bold-" + prefix) == true { strong(body) } else { body }
+}
+
+#let entry-title(body) = style-element("entry-titles", body)
+
+// A date styled like the date column of regular entries, with the same width and alignment.
+#let date-cell(body) = context {
+  let config = rendercv-config.get()
+  box(
+    width: config.at("entries-date-and-location-width"),
+    align(config.at("typography-date-and-location-column-alignment"), style-element("dates", body)),
+  )
+}
+
 #let regular-entry(main-column, date-and-location-column, main-column-second-row: none) = {
   metadata("skip-content-area")
 
