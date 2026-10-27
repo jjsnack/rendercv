@@ -8,6 +8,7 @@ Why:
     always-current skill file.
 """
 
+import argparse
 import ast
 import io
 import pathlib
@@ -293,6 +294,10 @@ def build_template_context() -> dict:
         raw_source = path.read_text(encoding="utf-8")
         model_sources[name] = strip_to_schema(raw_source)
 
+    geist_sample = (repository_root / "examples" / "Geist_Sample_CV.yaml").read_text(
+        encoding="utf-8"
+    )
+
     return {
         "version": __version__,
         "available_themes": SKILL_THEMES,
@@ -301,11 +306,15 @@ def build_template_context() -> dict:
         "sample_cv": sample_cv,
         "sample_classic_design": sample_classic_design,
         "theme_overrides": theme_overrides,
+        "geist_sample": geist_sample,
     }
 
 
-def generate_skill_file() -> None:
-    """Render the Jinja2 template and write SKILL.md, docs/llms.txt, and ZIP."""
+def generate_skill_file(output: pathlib.Path | None = None) -> None:
+    """Render the Jinja2 template and write SKILL.md, docs/llms.txt, and ZIP.
+
+    With `output`, write only that one file and leave the repository untouched.
+    """
     env = jinja2.Environment(
         loader=jinja2.FileSystemLoader(script_directory),
         keep_trailing_newline=True,
@@ -316,6 +325,11 @@ def generate_skill_file() -> None:
     context = build_template_context()
 
     rendered = template.render(context)
+
+    if output is not None:
+        output.parent.mkdir(parents=True, exist_ok=True)
+        output.write_text(rendered, encoding="utf-8")
+        return
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(rendered, encoding="utf-8")
@@ -331,5 +345,11 @@ def generate_skill_file() -> None:
 
 
 if __name__ == "__main__":
-    generate_skill_file()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--output",
+        type=pathlib.Path,
+        help="write only SKILL.md to this path instead of the repository files",
+    )
+    generate_skill_file(parser.parse_args().output)
     print("Skill generated successfully.")  # NOQA: T201

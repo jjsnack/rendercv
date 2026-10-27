@@ -221,6 +221,40 @@ highlights:
     - Sub-bullet 2
 ```
 
+## Fork additions (jjsnack/rendercv, branch `custom-resume-styling`)
+
+This build of RenderCV adds options and Typst helpers on top of stock {{ version }}. The Geist sample at the end of this file uses all of them.
+
+### Design options
+- `design.sections.hide_titles_for: [summary]` skips the heading of the named sections (lowercase, spaces as underscores, same matching as `show_time_spans_in`). The content keeps its normal styling.
+- `entry_titles` and `dates` exist under `design.colors`, `design.typography.font_family`, `design.typography.font_size` and `design.typography.bold`. All are optional; unset means inherit. *Entry titles* are `**bold**` text in an entry template (for example `design.templates.experience_entry.main_column: "**POSITION, COMPANY**\nSUMMARY\nHIGHLIGHTS"`); *dates* are the date column. `bold.entry_titles: false` removes the bold weight and keeps the font, size and colour.
+- `design.entries.short_second_row: false` puts highlights and summaries on a full-width second row under the title and date. (The name is inverted: `true` keeps everything beside the date column, which wraps text early.)
+
+### Typst helpers for free-form rows
+Text entries (plain strings) and `design.templates.one_line_entry` may contain these commands. They read the design options above, so changing the design restyles them.
+
+| Command | Result |
+|---|---|
+| `#entry-title[text]` | text styled like an entry title (`colors/font_family/font_size/bold.entry_titles`) |
+| `#date-cell[text]` | text styled like a date, in a box as wide as the date column and aligned like it |
+| `#cell(3cm)[text]` | fixed-width box, body style |
+| `#title-cell(3cm)[text]` | fixed-width box, entry-title style |
+| `#meta-cell(3cm)[text]` | fixed-width box, date style, left-aligned |
+| `#h(1fr)` | flexible gap that pushes what follows to the right edge |
+| `#v(0.35em)` | vertical space |
+| `#emph[text]` | italic |
+
+A three-column row (name, middle value, date) is written `'Bachelor of Engineering#h(1fr)#box(width: 2.6cm)[WAM: 85.0]#date-cell[2020 — PRESENT]'`.
+
+### Parser limits (these cause most failures)
+- RenderCV keeps a Typst command only if it is flat: `#name(args)[content]` with no `)` inside the args and no `]` inside the content. So no nested commands, no `rgb(...)` or other calls in the args; `[`, `]`, `"` and `#` anywhere else are escaped.
+- Every occurrence of an identical matched command in a line is replaced together, so an identical `#h(1fr)` nested inside another command breaks it. Spell the inner one differently, e.g. `#h(1.0fr)`.
+- Quote YAML strings that start with `#` or contain `: `. Use single quotes when the text has no apostrophe, or the typographic ’.
+- A bare year such as `date: "2023"` is parsed as a date and shown as "Jan 2023"; write `"2023 "` (trailing space) to show just the year.
+
+### Fitting a resume to one page
+The fork ships `tools/resume/fit.py CV.yaml`, which bisects `design.typography.line_spacing` for the loosest value that still renders one page. The owner's workspace wraps it in `make build PERSON=<name>`.
+
 ## CLI Reference
 
 ### `rendercv new "Full Name"`
@@ -295,3 +329,11 @@ Other themes only override specific fields from the classic defaults above. To u
 ```
 
 {% endfor %}
+
+### Geist sample (fork design, helpers and settings)
+
+A complete, working one-page resume for a made-up person. Copy its `design:` and `settings:` blocks for a new CV and replace the content.
+
+```yaml
+{{ geist_sample }}
+```
